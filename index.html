@@ -1,0 +1,31 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="container">
+			<h1>Pokedex - Desu</h1>
+            <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+            <button onclick="fetchData()">Fetch Pokemon</button>
+			<section id="pokedex" class="pokedex">...</section>
+		</main>
+
+        <div class="modal hide red">
+			<div class="card">
+				<div class="inner">
+					<img src="" alt="" class="modal-image" />
+					<h4 class="modal-name"></h4>
+					<p class="modal-description"></p>
+				</div>
+			</div>
+			<div class="modal-close">CLOSE</div>
+		</div>
+
+        <script src="config.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>
